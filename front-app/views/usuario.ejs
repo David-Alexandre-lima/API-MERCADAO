@@ -1,0 +1,22 @@
+<h1><%= title%></h1>
+
+<table>
+    <thead>
+        <tr>
+            <%for(let col of cols){%>
+            <th><%=col%></th>
+            <%}%>
+        </tr>
+    </thead>
+    <tbody>
+        <%for(let usuario of usuarios){%>
+            <tr>
+                <%for(let prop in usuario){%>
+                    <td><%=usuario[prop]%></td>
+                <%}%>
+            </tr>
+        <%}%>
+    </tbody>
+
+
+</table>
